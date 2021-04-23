@@ -29,7 +29,7 @@
 <body>
 
 
-<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start  bg-white  text-gray-700   dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
      
@@ -53,7 +53,7 @@
       
     
       
-      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials</a>   
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials &amp; Reviews</a>   
          
       
       <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
@@ -62,26 +62,28 @@
       <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#find-us">Find Us</a>
       
       
-      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
-      <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
+         <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+        
+            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
+        
       
-        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black text-black bg-opacity-75 z-50">
                 <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-                        <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                        <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                         </div>
                         <div class="block">
-                            <button type="button" onclick= "send_sms(1, 'OTM-Hardscape--Construction')" class="w-full px-3 py-4 font-bold font-lg text-white bg-green-900 rounded-lg">Send</button>
+                        <button type="button"  onclick= "send_sms(2, 'OTM-Hardscape--Construction')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-900  rounded-lg">Send</button> 
                         </div>
                         
     
@@ -98,39 +100,39 @@
   
 <div class = "flex w-full flex-col">
 
-<section class="flex flex-col w-full bg-green-900 lg:flex-row lg:flex-wrap sm:mx-auto">
+<section class="flex flex-col w-full  bg-green-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto">
     <div class="flex justify-end p-8 bg-green-900 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
-            <h5 class="mb-3 text-3xl text-center font-extrabold text-white leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
-                OTM Hardscape &amp; Construction
+            <h5 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
+                OTM Hardscape &amp; Construction  
             </h5>
             
-            <p class="py-5 mb-5 text-white lg:text-xl text-center lg:text-left">
+            <p class="py-5 mb-5 lg:text-xl text-center lg:text-left">
                 Put GOD first and you will never be last. Exceptional, Professional Service. You are our priority.
             </p>
             
             <div class="flex text-center justify-center items-center" x-data="{open: false}">
-                <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center bg-green-200 h-24 px-6 lg:mr-6 tracking-wide text-black transition duration-200 rounded-lg hover:bg-white hover:text-green-400 focus:shadow-outline focus:outline-none">
-                    <h5 class="text-3xl font-extrabold">Send us a text</h5> 
+                <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-200 text-black hover:bg-white hover:text-green-400 ">
+                    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
                 </button>
                 <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
-                    <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-                            <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
-                            </div>
-                            <div class="block">
-                                <button type="button" onclick= "send_sms(2, 'OTM-Hardscape--Construction')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white bg-green-900 rounded-lg">Send</button>
-                            </div>
+                    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                        </div>
+                        <div class="block">
+                        <button type="button"  onclick= "send_sms(1, 'OTM-Hardscape--Construction')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-900  rounded-lg">Send</button> 
+                        </div>
                             
      
                     </form>
@@ -151,18 +153,18 @@
 
   
 
-    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden bg-white lg:flex-row sm:mx-auto text-green-900">
+    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-green-900 ">
         <div class="relative lg:w-1/2">
             
             <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3199BLZO2BFQ5WELPO2KT0VLNOTELTPKX8OCL7UX.jpeg" alt="About Us Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
             
         </div>
-        <div class="py-5 lg:py-0 flex flex-col bg-white lg:py-32 lg:px-16 lg:w-1/2">
+        <div class="py-5 lg:py-0 flex flex-col lg:py-32 lg:px-16 lg:w-1/2">
             <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
                 <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl">
                     About Us
                 </h5>
-                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left text-green-900 lg:text-xl">
+                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left  lg:text-xl">
                 Luis Flores started out as a delivery driver for a paver company. Since then, he started OTM Hardscape where he and his team delivers quality home remodeling services with love and passion.
 OTM Hardscape is a licensed and insured hardscaping and home remodeling company, locally owned and operated in Houston for the past 10 years. 
 
@@ -175,7 +177,7 @@ Built from a highly educated and trained team of professionals with extensive kn
             
                 <div class="pb-30 mx-auto w-1/3 " data-aos="fade-down" data-aos-delay="400">
                     <span class = "text-green-400"> <i class="fas fa-user-shield fa-2x "></i> </span>
-                    <div class="mt-5 text-md font-bold text-green-900 uppercase">
+                    <div class="mt-5 text-md font-bold  uppercase">
                         Bonded
                     </div>
  
@@ -188,7 +190,7 @@ Built from a highly educated and trained team of professionals with extensive kn
                 <div class="mb-30 mx-auto w-1/3  " data-aos="fade-down" data-aos-delay="400">
                     <span class = "text-green-400"> <i class="fas fa-shield-alt fa-2x "></i> </span>
                     
-                    <div class="mt-5 text-md font-bold text-green-900 uppercase">
+                    <div class="mt-5 text-md font-bold  uppercase">
                         Insured
                     </div>
   
@@ -199,7 +201,7 @@ Built from a highly educated and trained team of professionals with extensive kn
             
                 <div class="mb-30 mx-auto w-1/3  " data-aos="fade-down" data-aos-delay="400">
                     <span class = "text-green-400"> <i class="fas fa-ambulance fa-2x"></i> </span>
-                    <div class="mt-5 text-md font-bold text-green-900 uppercase">
+                    <div class="mt-5 text-md font-bold  uppercase">
                         Emergency Services
                     </div>
                      <br>
@@ -208,6 +210,7 @@ Built from a highly educated and trained team of professionals with extensive kn
             	
             	
             	
+            
             
             </div>
             
@@ -229,17 +232,24 @@ Built from a highly educated and trained team of professionals with extensive kn
                 
                 
                 
+                
+                 
+                                 
                            
                   
                </div>
             
+            
         </div>
+        
+        
+
 
     </section>
 </div>
     
     
-    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6 bg-green-900 border-0 border-green-200 border-solid text-white">
+    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-green-900 border-0 border-green-200 text-white border-solid ">
         <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
             
             <h5 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
@@ -252,78 +262,78 @@ Built from a highly educated and trained team of professionals with extensive kn
             <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
 
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Pavers</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Pavers</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Walkways, driveways, and seating areas with many different pavers to choose from. We provide the best quality and price.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Stone Wall Installation</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Stone Wall Installation</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Nothing makes for a better yard than the security and safety of a stone wall. With a wide selection and a team experienced installing all types of walls we are happy to help!
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Patio Design and Construction</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Patio Design and Construction</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Patios can bring a yard to life with a place for the full family and guests to connect outside. We offer a variety of patio designs and each can be built custom.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Power Washing</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Power Washing</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Patios can bring a yard to life with a place for the full family and guests to connect outside. We offer a variety of patio designs and each can be built custom.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Fire Pits</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Fire Pits</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Gas-powered or wood burning fire places make excellent gathering areas in your yard. We offer a variety of custom options for the perfect reunion space.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Pergolas</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Pergolas</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Create a shaded living space in your yard with any size pergola.
                             </p>
                         </div>
@@ -335,90 +345,130 @@ Built from a highly educated and trained team of professionals with extensive kn
     </section>
     
     
-    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden bg-white md:pt-20 xl:pt-20 xl:pb-20">
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-white text-green-900   md:pt-20 xl:pt-20 xl:pb-20">
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-                <h5 class="mb-3 text-3xl text-green-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h5>
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h5>
                 <p class="my-3 mb-10 text-xl font-medium text-green-500 text-center">See why our customers love us</p>
                 <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_000.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic2.png" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_001_lCKsflx.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_001_lCKsflx.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_002.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_002.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic5.png" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic5.png" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic6.png" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic6.png" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_005.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_005.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_006.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_006.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_007.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_007.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic4.png" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic4.png" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_009.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_009.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic.png" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic.png" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_011.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_011.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_012.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_012.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic3.png" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic3.png" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_014.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_000.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic1.png" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_017.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic2.png" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_019.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_017.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_018.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_018.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_014.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Archivo_019.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/otmpic1.png" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DOIDQUP3WDIFM5S5YADJRTMBJPIMGR641YTDI3DU.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/RFATI1C9QTFEWLCMJCQ0QFGT7VCFWUTNXY6WFW1X.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/WNJ1K7XNFTNNM5YDRNCJ9TOGVCTI5BTN7GPQ7IXN.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/K5DHLEN2Q7OSDWVTT0H9UQ56CZE0XKSA1XB3MT0P.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/V8S6R9C524R46MSXS1IT3DFGC8PBZJFNKJEYU2MT.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/F2N2VGY4OUE7WTIRBIRP4BZPXM5OKZBJ2JU5TPNM.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CZXYW597F2GAF8X5QL3CMEYOD9PLC9DNUQTUQ2NT.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CI6AA5BK3N39FO1BYUAQE37JSJICQ2JWXN28A1MO.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/I98ZZJNLT0FWT7SASS57NL1RHDIYFJLOTAX17637.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2HGXM3E274L5XCNU3DON9IM062PJ8NYT78VFJKGD.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                  
                 </div>     
@@ -428,44 +478,44 @@ Built from a highly educated and trained team of professionals with extensive kn
     
     
     
-    <div id= "testimonials" class="flex items-center justify-center bg-green-900 py-20 min-w-screen px-4">
-        <div class="px-16 bg-green-900">
+    <div id= "testimonials" class="flex items-center justify-center  bg-green-900 text-white  py-20 min-w-screen px-4">
+        <div class="px-16 ">
             <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
                 <div class = "sm:mb-4 md:mb-0">
-                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider text-white uppercase lg:justify-center lg:items-center mb-10">Don't just take our word for it</p>
+                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</p>
                 </div>
 
 
-                <h5 class="mb-3 text-3xl text-white font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                     
-                    Testimonials & Reviews</h5>
+                    Testimonials &amp; Reviews</h5>
                 <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
                 <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">John Mirando</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Kacee B</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"We highly recommend OTM. Luis, Jonathan and her crew did a fantastic work. We are so glad we choose them to transform our backyard. Very professional and responsive! Thanks again"</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"all i can say is bravo bravo bravo! fast in responding to my inquiry  to getting the job done quickly . i did a walk way to my pool in travertine  in a versailles pattern priced well and looks great. he is a fair and honest business owner. using otm again in a month to redo my patio. love love love you wont be sorry if you choose them."</blockquote>                           
                         </div>
                     </div>
                     
@@ -473,60 +523,60 @@ Built from a highly educated and trained team of professionals with extensive kn
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Maggie Todd</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">John Mirando</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"These guys didn&#x27;t have the lowest quote, but they were darn close to the lowest and also had the most product knowledge for what I wanted to have done. 
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"We highly recommend OTM. Luis, Jonathan and her crew did a fantastic work. We are so glad we choose them to transform our backyard. Very professional and responsive! Thanks again"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-green-200  ">Maggie Todd</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"These guys didn&#x27;t have the lowest quote, but they were darn close to the lowest and also had the most product knowledge for what I wanted to have done. 
 These guys came in like a wrecking ball with a small army of guys and got 850 square feet installed in just over 2 very long days (literally a weekend)! 
 And they went above and beyond to make the job great. Exception bilingual communication - informed me every step of the way, and always consulted me with questions, or an unexpected situation, decision points, or a smart suggestion. The core team are all professional, personable and experienced and they have a craftman&#x27;s eye for details and curves.
 I would absolutely use them again and recommend them to others."</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Kacee B</h4>
-                            <p class="text-green-200">Homeowner</p>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"all i can say is bravo bravo bravo! fast in responding to my inquiry  to getting the job done quickly . i did a walk way to my pool in travertine  in a versailles pattern priced well and looks great. he is a fair and honest business owner. using otm again in a month to redo my patio. love love love you wont be sorry if you choose them."</blockquote>                           
                         </div>
                     </div>
                     
@@ -542,11 +592,11 @@ I would absolutely use them again and recommend them to others."</blockquote>
     </div>
     
 
-<section id= "faqs" class="py-16 bg-white md:py-20 lg:py-24">
+<section id= "faqs" class="py-16   bg-white text-green-900  md:py-20 lg:py-24">
     <div class="max-w-5xl px-12 mx-auto xl:px-0">
 
-        <h2 class="text-3xl text-green-900 font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
-        <p class="mt-4 text-xl font-thin text-green-900 lg:text-2xl text-center lg:text-left">Your questions answered</p>
+        <h2 class="text-3xl  font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
+        <p class="mt-4 text-xl font-thin  lg:text-2xl text-center lg:text-left">Your questions answered</p>
 
         <div class="relative mt-12 space-y-3">
 
@@ -578,10 +628,10 @@ I would absolutely use them again and recommend them to others."</blockquote>
 
 
 
-<section id="find-us" class="py-16 bg-white md:py-20 lg:py-20">
+<section id="find-us" class="py-16   bg-white text-green-900  md:py-20 lg:py-20">
     <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
 
-    <h5 class="mb-5 text-3xl text-green-900 mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Find Us</h5>
+    <h5 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Find Us</h5>
     <iframe
             width="100%"
             height="500px"
@@ -597,7 +647,7 @@ I would absolutely use them again and recommend them to others."</blockquote>
 <section class="py-10 bg-green-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
-            <p class="order-last text-sm leading-tight text-green-500 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="text-white">ProPhone</a>. Built with ❤️ by our team. </p>
+            <p class="order-last text-sm leading-tight text-green-500 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
              
             <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
                 <li> <a href="#about" class="px-2 md:px-4 text-green-500 hover:text-white">About Us</a> </li>
@@ -608,7 +658,7 @@ I would absolutely use them again and recommend them to others."</blockquote>
                 <li> <a href="#our-work" class=" px-2 md:px-4 text-green-500 hover:text-white">Our Best Work</a> </li>
                 
                 
-                <li> <a href="#testimonials" class="px-2 md:px-4 text-green-500 hover:text-white">Testimonials</a></li>
+                <li> <a href="#testimonials" class="px-2 md:px-4 text-green-500 hover:text-white">Testimonials &amp; Reviews</a></li>
                 
                 
                 <li> <a href="#faqs" class="px-2 md:px-4 text-green-500 hover:text-white">Faqs</a></li>
